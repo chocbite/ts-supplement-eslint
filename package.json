@@ -1,0 +1,24 @@
+{
+  "name": "@chocbite/ts-supplement-eslint",
+  "version": "1.0.0",
+  "description": "ESLint definitions for chocbite TypeScript projects",
+  "author": "chocolateandmilkwin",
+  "license": "MIT",
+  "type": "module",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "upgrades": "npx npm-check-updates --target semver",
+    "upgrade": "npx npm-check-updates --target semver -u && npm install"
+  },
+  "devDependencies": {
+    "eslint": "^10.1.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.1"
+  }
+}
