@@ -1,13 +1,17 @@
 {
   "name": "@chocbite/ts-supplement-eslint",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "ESLint definitions for chocbite TypeScript projects",
   "author": "chocolateandmilkwin",
   "license": "MIT",
   "type": "module",
   "private": false,
+  "module": "./dist/eslint.config.js",
   "publishConfig": {
     "access": "public"
+  },
+  "exports": {
+    ".": "./dist/eslint.config.js"
   },
   "files": [
     "dist"
@@ -17,8 +21,10 @@
     "upgrade": "npx npm-check-updates --target semver -u && npm install"
   },
   "devDependencies": {
-    "eslint": "^10.1.0",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.57.1"
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "eslint": "^10.2.0",
+    "typescript-eslint": "^8.58.2"
   }
 }
