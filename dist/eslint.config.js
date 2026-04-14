@@ -4,7 +4,13 @@ import tseslint from "typescript-eslint";
 export default defineConfig(
   tseslint.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
-  globalIgnores(["dist/*", "src/pages*", "eslint.config.js", "vite.config.ts"]),
+  globalIgnores([
+    "dist/*",
+    "src/pages*",
+    "eslint.config.js",
+    "vite.config.ts",
+    "tsdown.config.ts",
+  ]),
   {
     rules: {
       "@typescript-eslint/no-explicit-any": "off",
