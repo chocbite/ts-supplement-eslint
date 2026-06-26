@@ -47,7 +47,7 @@ export default defineConfig(
           selector: "classMethod",
           filter: {
             regex:
-              "^(connectedCallback|disconnectedCallback|attributeChangedCallback|adoptedCallback)$",
+              "^(connectedCallback|disconnectedCallback|attributeChangedCallback|adoptedCallback|toJSON)$",
             match: true,
           },
           format: null,
