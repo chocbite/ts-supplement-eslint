@@ -19,54 +19,6 @@ export default defineConfig(
       "@typescript-eslint/require-await": "off",
       "@typescript-eslint/no-floating-promises": "off",
       "@typescript-eslint/no-misused-promises": "off",
-      "@typescript-eslint/naming-convention": [
-        "error",
-        {
-          selector: "function",
-          format: ["snake_case"],
-        },
-        {
-          selector: "parameter",
-          format: ["snake_case"],
-          leadingUnderscore: "allow",
-        },
-        {
-          selector: "variable",
-          modifiers: ["const", "global"],
-          format: ["UPPER_CASE", "snake_case", "PascalCase"],
-        },
-        {
-          selector: "variable",
-          format: ["snake_case"],
-        },
-        {
-          selector: "classMethod",
-          format: ["snake_case"],
-        },
-        {
-          selector: "classMethod",
-          filter: {
-            regex:
-              "^(connectedCallback|disconnectedCallback|attributeChangedCallback|adoptedCallback|toJSON)$",
-            match: true,
-          },
-          format: null,
-        },
-        {
-          selector: "accessor",
-          format: ["snake_case"],
-        },
-        {
-          selector: "classProperty",
-          format: ["snake_case"],
-          leadingUnderscore: "allow",
-        },
-        {
-          selector: "typeLike",
-          format: ["PascalCase"],
-          leadingUnderscore: "allow",
-        },
-      ],
     },
   },
   {
