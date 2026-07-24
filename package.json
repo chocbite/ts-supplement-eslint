@@ -1,6 +1,6 @@
 {
   "name": "@chocbite/ts-supplement-eslint",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "ESLint definitions for chocbite TypeScript projects",
   "author": "chocolateandmilkwin",
   "license": "MIT",
